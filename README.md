@@ -1,4 +1,4 @@
-![GitHub](https://img.shields.io/github/license/umer-r/SysInfo-Batch) ![GitHub top language](https://img.shields.io/github/languages/top/umer-r/SysInfo-Batch) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/umer-r/SysInfo-Batch) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/umer-r/SysInfo-Batch)
+![GitHub](https://img.shields.io/github/license/umer-r/SysInfo-Batch) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/umer-r/SysInfo-Batch)
 
 # SYSINFO-Batch
 
