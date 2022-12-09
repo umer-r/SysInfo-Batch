@@ -37,11 +37,12 @@ FOR /F "tokens=2 delims='='" %%A in ('wmic csproduct Get UUID /value') do SET pr
 FOR /F "tokens=2 delims='='" %%A in ('wmic cpu get name /value') do SET cpu=%%A
 FOR /F "tokens=2 delims='='" %%A in ('wmic cpu get NumberOfCores /value') do SET phycore=%%A
 FOR /F "tokens=2 delims='='" %%A in ('wmic cpu get NumberOfLogicalProcessors /value') do SET logcore=%%A
-FOR /F "tokens=4" %%a in ('systeminfo ^| findstr Physical') do if defined totalMem (set availableMem=%%a) else (set totalMem=%%a)
+FOR /F "tokens=4" %%a in ('systeminfo ^| findstr ^Physical') do if defined totalMem (set availableMem=%%a) else (set totalMem=%%a)
 set totalMem=%totalMem:,=%
 set availableMem=%availableMem:,=%
 set /a usedMem=totalMem-availableMem
-FOR /F "tokens=2 delims='='" %%A in ('wmic logicaldisk get size /value') do SET diskspacetotal=%%A
+REM FOR /F "tokens=2 delims='='" %%A in ('wmic logicaldisk get size /value') do SET diskspacetotal=%%A
+REM FOR /F "tokens=*" %%g IN ('wmic /node:"%COMPUTERNAME%" LogicalDisk Where DriveType="3" Get DeviceID,FreeSpace ^| findstr /I c:') do SET hello=%%g
 
 cls
 
@@ -56,7 +57,7 @@ echo [+] CPU Name           %cpu%
 echo [+] Physical Cores     %phycore%
 echo [+] Logical Cores      %logcore%
 echo [+] RAM Memory         %totalMem%
-echo [+] Disk Space         %diskspacetotal%
+echo [+] Disk Space         %hello%
 echo.
 echo.
 pause
