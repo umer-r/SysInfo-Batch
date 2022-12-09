@@ -4,6 +4,20 @@
 
 ***Windows Batch Script For System Information Monitoring***
 
+## Run file
+```batch
+git clone https://github.com/umer-r/SysInfo-Batch.git
+cd SysInfo-Batch
+sys_check.bat
+```
+OR
+
+- Double click on sys_check.bat
+
+## Sample Output
+
+![Output](https://user-images.githubusercontent.com/83476929/206752772-fdaff8e0-2f09-4d0a-be2d-e9c19fc4ec0f.png)
+
 # Contact
 
 - [Gmail](mailto:russs3400@gmail.com)
