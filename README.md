@@ -1,4 +1,6 @@
-![GitHub](https://img.shields.io/github/license/umer-r/SysInfo-Batch) ![GitHub Last commit](https://img.shields.io/github/last-commit/umer-r/SysInfo-Batch) ![Repo-Size](https://img.shields.io/github/repo-size/umer-r/SysInfo-Batch)
+[user]: umer-r
+[repo]: SysInfo-Batch
+![GitHub](https://img.shields.io/github/license/[user]/[repo]) ![GitHub Last commit](https://img.shields.io/github/last-commit/umer-r/SysInfo-Batch) ![Repo-Size](https://img.shields.io/github/repo-size/umer-r/SysInfo-Batch)
 ![Language Count](https://img.shields.io/github/languages/count/umer-r/SysInfo-Batch)
 # SYSINFO-Batch
 
